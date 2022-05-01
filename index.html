@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peace</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <i class="bi bi-chevron-compact-right arrow" onclick="nav_show()"></i>
+
+    <!-- nav start -->
+    <div id="nav" style="left: -350px;">
+
+        <i class="bi bi-x-lg cross" onclick="nav_hide()"></i>
+
+        <div class="book">
+
+            <p id="name" onclick="chapters_toggle()">মিসির আলি অমনিবাস ১</p>
+            <div id="chapters" class="hidden">
+                <p id="debi" class="chap-name" pageNum="14" onclick="pdfNav(this.id)">দেবী</p>
+                <p id="nishithini" class="chap-name" pageNum="85" onclick="pdfNav(this.id)">নিশীথিনী</p>
+                <p id="nishad" class="chap-name" pageNum="175" onclick="pdfNav(this.id)">নিষাদ</p>
+                <p id="onnoBhubon" class="chap-name" pageNum="235" onclick="pdfNav(this.id)">অন্য ভুবন</p>
+                <p id="brihonnola" class="chap-name" pageNum="292" onclick="pdfNav(this.id)">বৃহন্নলা</p>
+                <p id="bhoy" class="chap-name" pageNum="327" onclick="pdfNav(this.id)">ভয়</p>
+                <p id="bipod" class="chap-name" pageNum="382" onclick="pdfNav(this.id)">বিপদ</p>
+                <p id="onish" class="chap-name" pageNum="422" onclick="pdfNav(this.id)">অনীশ</p>
+                <p id="omimangsito" class="chap-name" pageNum="464" onclick="pdfNav(this.id)">মিসির আলি অমীমাংসিত রহস্য</p>
+            </div>
+            
+        </div>
+
+    </div>
+    <!-- nev end -->
+
+    
+    <iframe id="pdfviewer" src="assets/Misir Ali Omnibus 1.pdf" frameborder="0"></iframe>
+
+<script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body, html{
+    background: #1c1c1c;
+}
+
+@font-face { font-family: "bangla"; src: url(../fonts/Chankharpul\ Press.ttf); }
+
+/* arrow css start */
+.arrow{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-40%, -50%);
+    background: #ffffff;
+    color: #000000;
+    font-size: 30px;
+    line-height: 44px !important;
+    text-align: center;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    opacity: 0.5;
+    transition: 0.4s;
+    z-index: 9;
+}
+
+.arrow::before{
+    line-height: 0;
+}
+
+.arrow:hover{
+    opacity: 1;
+}
+/* arrow css end */
+
+/* nav-panel css start */
+#nav{
+    position: relative;
+    width: 350px;
+    height: 100vh;
+    background: whitesmoke;
+    padding-top: 80px;
+    box-sizing: border-box;
+    transition: 0.4s;
+    z-index: 99;
+}
+
+#nav .cross{
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 30px;
+}
+
+#nav .book #name{
+    font-family: "bangla";
+    font-size: 25px;
+    padding: 0 0 0 20px;
+}
+
+#nav .book #chapters{
+    height: 0px;
+    font-family: "bangla";
+    font-size: 20px;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+}
+
+#nav .book #chapters .chap-name{
+    margin: 5px 0;
+    padding: 0 0 0 45px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+#nav .book #chapters .chap-name:hover{
+    padding: 0 0 0 55px;
+}
+/* nav-panel css end */
+
+/* iframe pdfviewer css start */
+#pdfviewer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+/* iframe pdfviewer css end */
